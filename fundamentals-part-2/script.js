@@ -47,7 +47,7 @@ console.log(age3);
 const yearsUntilRetirement = (birthYeah, firstName) => {
   const age = 2037 - birthYeah;
   const retirement = 65 - age;
-  
+
   return `${firstName} retires in ${retirement} years`;
 }
 
@@ -68,5 +68,89 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
 
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
 
-  
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+
+const calcAge = function (birthYeah) {
+  return 2037 - birthYeah;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age01 = calcAge(years[0]);
+const age02 = calcAge(years[1]);
+const age03 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
+
+
+
+const friendss = ['Michael', 'Steven', 'Peter'];
+
+
+const newLength = friendss.push('Jay');
+console.log(friendss);
+console.log(newLength);
+
+friendss.unshift('John');
+console.log(friendss);
+
+
+friendss.pop();
+const popped = friendss.pop();
+console.log(popped);
+console.log(friendss);
+
+friendss.shift();
+console.log(friendss);
+
+console.log(friendss.indexOf('Steven'));
+console.log(friendss.indexOf('Bob'));
+
+friendss.push(23);
+console.log(friendss.includes('Steven'));
+console.log(friendss.includes('Bob'));
+console.log(friendss.includes(23));
+
+if (friendss.includes('Steven')) {
+  console.log('You have a friend called Steven');
+}
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven']
+];
+
+const jona = {
+  firstName: 'Jona',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven']
+};
